@@ -1,0 +1,273 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #fff;
+}
+
+footer {
+    position: relative;
+    margin: 8rem 0;
+    background-color: #121212;
+    color: #fff;
+}
+
+.footer-top {
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+    border-radius: 10px;
+    box-shadow: 4px -4px 8px rgba(0, 0, 0, 0.1);;
+    background-color: white;
+    color: black;
+    width: 70%;
+    top: -20%;
+    left: 10%;
+    z-index: 1;
+}
+
+.footer-section {
+    display: flex;
+}
+
+.footer-top-icon {
+    display: block;
+    font-size: 2em;
+    margin-top: 1.5rem;
+    margin-right: 1rem;
+}
+
+.footer-top-text {
+    display: block;
+}
+
+i {
+    color: orangered;
+}
+
+.footer-section h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.9em;
+    color: #aaa;
+}
+
+.footer-middle {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 50px 20px 50px;
+    border-bottom: 1px solid #333;
+    z-index: 0;
+}
+
+.logo-section {
+    width: 20%;
+}
+
+.logo-section img {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+.logo-section p {
+    font-size: 0.8em;
+    color: #aaa;
+    max-width: 300px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons button {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.social-icons button i {
+    color: white;
+}
+
+.footer-links h3 {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.footer-links ul {
+    padding: 0;
+    margin-top: 20px;
+}
+
+.footer-links ul li {
+    font-size: 0.8em;
+    margin-bottom: 20px;
+    color: #aaa;
+}
+
+.footer-links ul li::marker {
+    color: orangered;
+} 
+
+.footer-links-posts {
+    display: block;
+    width: 300px;
+}
+
+.footer-post {
+    display: flex;
+}
+
+.post-image img{
+    display: block;
+    border-radius: 10px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.post-text {
+    display: block;
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.post-text span {
+    color: orangered;
+}
+
+.footer-bottom {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.footer-bottom-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .footer-top {
+        width: 90%;
+        top: -10%;
+        left: 5%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .footer-section {
+        margin-bottom: 15px;
+        text-align: center;
+    }
+
+    .footer-middle {
+        flex-direction: column;
+        align-items: center;
+        padding: 200px 10px 20px 10px;
+    }
+
+    .footer-middle p {
+        margin: 20px auto;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-section {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-links {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-links-posts {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    .footer-top {
+        top: -5%;
+        left: 2%;
+        padding: 5px 0;
+    }
+
+    .footer-section {
+        font-size: 0.8em;
+    }
+
+    .footer-middle {
+        padding: 200px 10px 20px 10px;
+    }
+
+    .footer-middle p {
+        margin: 20px auto;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .logo-section img {
+        width: 80px;
+    }
+
+    .footer-links ul li {
+        font-size: 0.7em;
+    }
+
+    .footer-post {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .post-image img {
+        width: 80px;
+        height: 60px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .footer-bottom-links {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
