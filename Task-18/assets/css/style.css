@@ -1,0 +1,206 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e2a47;
+}
+
+.footer {
+    background-color: #0e2a47;
+    color: #ffffff;
+    padding: 50px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 220px;
+    margin: 10px;
+}
+
+.doki-logo {
+    display: flex;
+}
+
+.doki-logo i {
+    font-size: 1.8em;
+    color: #ff3d55;
+    margin: 20px 10px 0 0;
+}
+
+.footer-column h2 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 1.7em;
+    display: inline-block;
+}
+
+.footer-column h3 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+h3::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 60px;
+    background-color: #ff3d55;
+    margin-top: 10px;
+}
+
+.contact {
+    display: flex;
+}
+
+.contact i {
+    font-size: 1.2em;
+    color: #ff3d55;
+    margin: 20px 15px 0 0;
+}
+
+.footer-column p, .footer-column a {
+    color: #e2e2e2;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    line-height: 1.6;
+}
+
+.subscribe-form input[type="email"] {
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #838383;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 250px;
+    color: white;
+    background-color: transparent;
+}
+
+.subscribe-form button {
+    padding: 10px 20px;
+    max-width: 280px;
+    width: 100%;
+    background-color: #ff3d55;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+hr {
+    color: #838383;
+    margin: 50px 70px 0 70px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin: 10px 70px 0 70px;
+    color: #ffffff;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colored {
+    color: #ff3d55;
+}
+
+a {
+    text-decoration: none;
+}
+
+.social-icons {
+    display: flex;
+    color: #ffffff;
+    margin: 10px 2px;
+    font-size: 1em;
+}
+
+.social-icons span {
+    margin: 10px 5px 0 0;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    margin: 2px;
+    cursor: pointer;
+}
+
+.social-icon i {
+    color: #838383;
+    font-size: 1.3em;
+}
+
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .doki-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer-column {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        margin: 20px 0;
+    }
+
+    .social-icons {
+        margin-top: 10px;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+    .footer-column h2 {
+        font-size: 1.4em;
+    }
+
+    .footer-column h3 {
+        font-size: 16px;
+    }
+
+    .contact p {
+        text-align: left;
+    }
+
+    .subscribe-form input[type="email"] {
+        max-width: 90%;
+    }
+
+    .subscribe-form button {
+        max-width: 100%;
+    }
+
+    .social-icons {
+        display: flex;
+        justify-content: center;
+    }
+}
