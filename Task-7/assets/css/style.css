@@ -1,0 +1,164 @@
+/* General styles */
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+.course-card {
+  width: 30%;
+  height: 80vh;
+  background-color: #fff;
+  border-radius: 8px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.bookmark {
+  font-size: 1.2rem;
+  padding: 6px 10px 6px 10px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(219, 219, 219);
+  float: right;
+}
+
+.course-info {
+  padding: 20px;
+}
+
+.course-info h3 {
+  margin-top: 0;
+  color: black;
+  font-size: 1.1em;
+}
+
+.rating {
+  color: #e63946;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.review-count {
+  color: #457b9d;
+  font-size: 14px;
+}
+
+.details {
+  display: flex;
+  color: #6d6d6d;
+  background-color: rgb(231, 231, 231);
+  width: 160px;
+  height: 20px;
+  padding: 5px;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.course-info p {
+  color: rgb(134, 134, 134);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+
+.colored {
+  color: #aaa;
+}
+
+.author-img{
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    margin-right: 10px;
+  }
+
+.footer {
+  display: flex;
+  align-items: center;
+  margin-top: 45px;
+}
+
+.original-price {
+  color: #aaa;
+  text-decoration: line-through;
+  margin-right: 10px;
+}
+
+.price {
+  color: #e63946;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.more-details {
+  display: block;
+  width: 100%;
+  background-color: #fff;
+  color: #a7a7a7;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.footer {
+  justify-content: space-between;
+}
+
+.footer::before {
+  content: "";
+  display: block;
+  width: 340px;
+  height: 1px;
+  background-color: rgb(206, 206, 206);
+  position: absolute;
+  bottom: 130px;
+}
+
+@media (max-width: 1200px) {
+  .course-card {
+    width: 45%;
+    height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .course-card {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .more-details {
+    width: auto;
+  }
+
+  .footer::before {
+    width: 100%;
+  }
+}
