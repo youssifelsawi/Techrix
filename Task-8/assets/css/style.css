@@ -1,0 +1,195 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #6e00ef;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.phones {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 5rem;
+  flex: 1;
+}
+
+.phones img {
+  width: 60%;
+}
+
+.content {
+  max-width: 50%;
+  flex: 1;
+}
+
+h1 {
+  font-size: 3rem;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  line-height: 1.5;
+}
+
+.app-stores {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.store-button {
+  display: flex;
+  padding: 0.5rem 1rem;
+  border-radius: 10px;
+  font-size: 0.8em;
+  text-decoration: none;
+  color: white;
+  margin-right: 1rem;
+  background-color: transparent;
+  border: 2px solid white;
+}
+
+.app-store span,
+.google-play span {
+  display: block;
+  font-size: 2em;
+}
+
+.icon {
+  display: block;
+  font-size: 3em;
+  margin-right: 0.7rem;
+}
+
+.availability {
+  font-size: 0.75rem;
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .phones {
+    margin: 2rem 0;
+    width: 80%;
+  }
+
+  .phones img {
+    width: 70%;
+  }
+
+  .content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .app-stores {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    font-size: 0.9em;
+  }
+
+  .store-button span {
+    font-size: 1.5em;
+  }
+
+  .icon {
+    font-size: 2.5em;
+  }
+
+  .availability {
+    font-size: 0.65rem;
+    margin-bottom: 5rem;
+  }
+}
+
+/* For Mobile Devices */
+@media (max-width: 480px) {
+  .phones img {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .app-stores {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-button {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 0.8em;
+    margin: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .store-button span {
+    font-size: 1.2em;
+  }
+
+  .icon {
+    font-size: 2em;
+  }
+
+  .availability {
+    font-size: 0.6rem;
+  }
+}
